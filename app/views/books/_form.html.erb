@@ -31,6 +31,10 @@
     <%= form.text_field :url_image %>
   </div>
 
+  <div>
+    <%= form.select :author_id, Author.all.collect{|author| [author.name_author, author.id] }, include_blank: true %>
+  </div> 
+
   <div class="actions">
     <%= form.submit %>
   </div>
