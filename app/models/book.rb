@@ -1,4 +1,5 @@
 class Book < ApplicationRecord
   belongs_to :author
-  # só tem um autor
+  belongs_to :genre
+  # belongs_to: só tem um autor
 end
